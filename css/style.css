@@ -40,6 +40,31 @@ body {
     padding: 5px 10px;
     margin-left: 20px;
 }
+.flex-container {
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 20px;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.cell-wireframe {
+    font-family: var(--main-font-family);
+    border: solid black 1px;
+    width: 180px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.cell-color {
+    vertical-align: center;
+    background: antiquewhite;
+}
+
+.header-cell {
+    background: var(--text-color);
+}
 
 table {
     font-family: var(--main-font-family);
