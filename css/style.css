@@ -1,51 +1,71 @@
 @charset utf-8;
 @font-face {
     font-family: 'Oswald';
-    src: local('Oswald Heavy'), local('Oswald-Heavy'), url('Oswaldheavy.woff2') format('woff2'), url('Oswaldheavy.woff') format('woff'), url('Oswaldheavy.ttf') format('truetype');
+    src: local('Oswald Heavy'), local('Oswald-Heavy'), url('Oswaldheavy.woff2') format('woff2'), url('Oswaldheavy.woff') format('woff'), url('../type/Oswaldheavy.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
-/*
-#f2c061 - текст
-#902628 - фон страницы
-
-*/
+:root {
+    --main-font-family: 'Oswald', serif;
+    --bg-color: #902628;
+    --text-color: #f2c061;
+    --h1-color: white;
+    --pictures-position: absolute;
+}
 
 body {
-    /* height: 1280px;
-    width: 720px;
-*/
-    background: #902628;
+    background: var(--bg-color);
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline {
+    text-align: center;
+}
+
+.background {
+    background: url("../pics/backgr.jpg");
+}
+
+.navbutton {
+    font-family: var(--main-font-family);
+    background: white;
+    border: solid black 2px;
+    border-radius: 10px 10px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    margin-left: 20px;
 }
 
 table {
-    font-family: 'Oswald';
-
+    font-family: var(--main-font-family);
 }
 
 th {
-
-    background: #f2c061;
-
+    background: var(--text-color)
 }
 
-.1col {
-    font-family: 'Oswald';
+col {
+    font-family: var(--main-font-family);
 
 }
 
 h1 {
-    font-family: 'Oswald';
-    color: white;
+    font-family: var(--main-font-family);
+    color: var(--h1-color);
 
 }
 
 h2 {
-    font-family: 'Oswald';
-    color: white;
+    font-family: var(--main-font-family);
+    color: var(--h1-color);
     background: black;
-    width: 250px;
+    margin-left: 40%;
+    margin-right: 40%;
     border-radius: 10px 10px;
     padding: 2px;
 }
@@ -54,24 +74,32 @@ td {
     text-align: center;
 }
 
-#snow1 {
-    position: absolute;
+.snow-pic {
+    position: var(--pictures-position);
+    width: 256px;
+    height: 256px;
 }
-
-#snow2 {
-    position: absolute;
+.snow-right {
     right: 0;
 }
-#player{
-    width: 300px;
-    
+
+.sound-icon {
+    width: 32px;
+    height: 32px;
 }
-#song{
-    width: 400px;
+
+.emoji-icon {
+    width: 64px;
+    height: 64px;
 }
-.audio{
-    margin-top: 1%;
+
+.navigation-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-#final{
-    margin: 1% 1%;
+
+audio {
+    margin-left: 40%;
+    width: 25%;
 }
