@@ -99,6 +99,32 @@ td {
     flex-wrap: wrap;
 }
 
+.grid-container {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 20px;
+}
+
+.cell {
+    font-family: var(--main-font-family);
+    border: solid black 1px;
+    width: 180px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.cell-color {
+    vertical-align: center;
+    background: antiquewhite;
+}
+
+.header-cell {
+    background: var(--text-color);
+}
+
 audio {
     margin-left: 40%;
     width: 25%;

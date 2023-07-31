@@ -5,165 +5,108 @@
     <title>Отгадай мелодию</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <img src="../pics/snow.svg" alt="" class="snow-pic">
-    <!--таблица 5х5-->
     <div class="wrapper">
         <h1 class="headline"> — ТУР 1 — </h1>
         <h2 class="headline">ОТГАДАЙ НАЗВАНИЕ</h2>
-        <table border="1" bordercolor="brown" cellpadding="10" bgcolor="antiquewhite" align="center" width="50%" height="50%">
-            <!--1 строка-->
-            <tr>
-                <!--1 столбец-->
-                <th>
-                    Категория
-                </th>
-                <!--2 столбец-->
-                <th>
-                    100
-                </th>
-                <!--3 столбец-->
-                <th>
-                    200
-                </th>
-                <!--4 столбец-->
-                <th>
-                    300
-                </th>
-                <!--5 столбец-->
-                <th>
-                    400
-                </th>
-
-            </tr>
-            <!--2 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    The Beatles
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/q/beatles/1yesterday.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/q/beatles/2yellowsub.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/q/beatles/3letitbe.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/q/beatles/4heyjude.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-            </tr>
-            <!--3 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Emoji
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/q/emoji/1zelenoglaz.jpg">
-                        <img src="../pics/emodji.png" class="emoji-icon"  alt="">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/q/emoji/2boje_man.jpg">
-                        <img src="../pics/emodji.png" class="emoji-icon" alt="">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/q/emoji/3eksponat.jpg">
-                        <img src="../pics/emodji.png" class="emoji-icon" alt="">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/q/emoji/4nevesta.jpg">
-                        <img src="../pics/emodji.png" class="emoji-icon"  alt="">
-                    </a>
-                </td>
-
-            </tr>
-            <!--4 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Мужские имена
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/q/man_name/1aleshka_minus.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/q/man_name/2roman.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/q/man_name/3valera_valera_M.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/q/man_name/4serega.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-
-            </tr>
-            <!--5 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    А снег идет...
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/q/snow/1potolok.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/q/snow/2JingleBells.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/q/snow/3zametaet.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/q/snow/4blueiney.mp3">
-                        <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <div class="grid-container">
+            <div class="cell header-cell">Категория</div>
+            <div class="cell header-cell">100</div>
+            <div class="cell header-cell">200</div>
+            <div class="cell header-cell">300</div>
+            <div class="cell header-cell">400</div>
+            <div class="cell cell-color">The Beatles</div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/beatles/1yesterday.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/beatles/2yellowsub.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div  class="cell cell-color">
+                <a href="../audio/1/q/beatles/3letitbe.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div  class="cell cell-color">
+                <a href="../audio/1/q/beatles/4heyjude.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                Emoji
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/emoji/1zelenoglaz.jpg">
+                    <img src="../pics/emodji.png" class="emoji-icon"  alt="">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/emoji/2boje_man.jpg">
+                    <img src="../pics/emodji.png" class="emoji-icon" alt="">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/emoji/3eksponat.jpg">
+                    <img src="../pics/emodji.png" class="emoji-icon" alt="">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/emoji/4nevesta.jpg">
+                    <img src="../pics/emodji.png" class="emoji-icon"  alt="">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                Мужские имена
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/man_name/1aleshka_minus.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/man_name/2roman.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/man_name/3valera_valera_M.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/man_name/4serega.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                А снег идет...
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/snow/1potolok.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/snow/2JingleBells.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/snow/3zametaet.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+            <div class="cell cell-color">
+                <a href="../audio/1/q/snow/4blueiney.mp3">
+                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                </a>
+            </div>
+        </div>
     </div>
     <img src="../pics/snow.svg" alt="" class="snow-pic snow-right">
     <nav class="navigation-menu">
@@ -177,6 +120,5 @@
         <a href="../pages/final_q.html" accesskey="5"></a>
         <a href="../pages/final_a.html" accesskey="6"></a>
     </nav>
-
 </body>
 </html>
