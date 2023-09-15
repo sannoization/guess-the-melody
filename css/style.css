@@ -110,7 +110,6 @@ td {
 .cell {
     font-family: var(--main-font-family);
     border: solid black 1px;
-    width: 180px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -128,4 +127,13 @@ td {
 audio {
     margin-left: 40%;
     width: 25%;
+}
+
+.remaining {
+    display: block;
+    text-align: center;
+}
+
+.jouele-sample-player.jouele-is-playing {
+    color: wheat;
 }

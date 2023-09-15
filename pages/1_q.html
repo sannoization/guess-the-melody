@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Отгадай мелодию</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jouele.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="jouele.min.css">
+    <link rel="stylesheet" href="jouele.skin.css">
 </head>
 <body>
     <img src="../pics/snow.svg" alt="" class="snow-pic">
@@ -18,24 +23,52 @@
             <div class="cell header-cell">400</div>
             <div class="cell cell-color">The Beatles</div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/beatles/1yesterday.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/beatles/1yesterday.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                         >
+                <span class="remaining jouele-control"
+                      data-href="../audio/1/q/beatles/1yesterday.mp3"
+                      data-type="time-remaining"
+                ></span>
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/beatles/2yellowsub.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/beatles/2yellowsub.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                         >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/beatles/2yellowsub.mp3"
+                          data-type="time-remaining"
+                    ></span>
+            </div>
+            <div class="cell cell-color">
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/beatles/3letitbe.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/beatles/3letitbe.mp3"
+                          data-type="time-remaining"
+                    ></span>
             </div>
             <div  class="cell cell-color">
-                <a href="../audio/1/q/beatles/3letitbe.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
-            </div>
-            <div  class="cell cell-color">
-                <a href="../audio/1/q/beatles/4heyjude.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/beatles/4heyjude.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/beatles/4heyjude.mp3"
+                          data-type="time-remaining"
+                    ></span>
             </div>
             <div class="cell cell-color">
                 Emoji
@@ -64,46 +97,105 @@
                 Мужские имена
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/man_name/1aleshka_minus.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/man_name/1aleshka_minus.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/man_name/1aleshka_minus.mp3"
+                          data-type="time-remaining"
+                    ></span>
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/man_name/2roman.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/man_name/2roman.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/man_name/2roman.mp3"
+                          data-type="time-remaining"
+                    ></span>
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/man_name/3valera_valera_M.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/man_name/3valera_valera_M.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/man_name/3valera_valera_M.mp3"
+                          data-type="time-remaining"
+                    ></span>
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/man_name/4serega.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/man_name/4serega.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/man_name/4serega.mp3"
+                          data-type="time-remaining"
+                    ></span>
             </div>
             <div class="cell cell-color">
                 А снег идет...
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/snow/1potolok.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/snow/1potolok.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/snow/1potolok.mp3"
+                          data-type="time-remaining"
+                    ></span>
+            </div>
+            <div class="cell cell-color">
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/snow/2JingleBells.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/snow/2JingleBells.mp3"
+                          data-type="time-remaining"
+                    ></span>
                 </a>
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/snow/2JingleBells.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/snow/3zametaet.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/snow/3zametaet.mp3"
+                          data-type="time-remaining"
+                    ></span>
                 </a>
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/snow/3zametaet.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
-                </a>
-            </div>
-            <div class="cell cell-color">
-                <a href="../audio/1/q/snow/4blueiney.mp3">
-                    <img src="../pics/sound-symbol.png" alt="1" class="sound-icon">
+                    <img src="../pics/sound-symbol.png"
+                         class="sound-icon jouele-control"
+                         data-href="../audio/1/q/snow/4blueiney.mp3"
+                         data-type="play-pause"
+                         alt="1"
+                    >
+                    <span class="remaining jouele-control"
+                          data-href="../audio/1/q/snow/4blueiney.mp3"
+                          data-type="time-remaining"
+                    ></span>
                 </a>
             </div>
         </div>
