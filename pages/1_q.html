@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title>Отгадай мелодию</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="jquery-3.7.1.min.js"></script>
-    <script src="jouele.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jouele.min.js"></script>
+    <script src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="jouele.min.css">
-    <link rel="stylesheet" href="jouele.skin.css">
+    <link rel="stylesheet" href="../js/jouele.min.css">
+    <link rel="stylesheet" href="../js/jouele.skin.css">
 </head>
 <body>
-    <img src="../pics/snow.svg" alt="" class="snow-pic">
+<div class="popup invisible" onclick="togglePopup();">
+  <img id="img_popup" src="" alt="">
+</div>
+<img src="../pics/snow.svg" alt="" class="snow-pic">
     <div class="wrapper">
         <h1 class="headline"> — ТУР 1 — </h1>
         <h2 class="headline">ОТГАДАЙ НАЗВАНИЕ</h2>
@@ -28,6 +32,7 @@
                          data-href="../audio/1/q/beatles/1yesterday.mp3"
                          data-type="play-pause"
                          alt="1"
+                         onclick="changeImg(this)"
                          >
                 <span class="remaining jouele-control"
                       data-href="../audio/1/q/beatles/1yesterday.mp3"
@@ -39,6 +44,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/beatles/2yellowsub.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                          >
                     <span class="remaining jouele-control"
@@ -51,6 +57,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/beatles/3letitbe.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
@@ -63,6 +70,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/beatles/4heyjude.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
@@ -74,24 +82,28 @@
                 Emoji
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/emoji/1zelenoglaz.jpg">
-                    <img src="../pics/emodji.png" class="emoji-icon"  alt="">
-                </a>
+                    <img src="../pics/emodji.png" class="emoji-icon"
+                         link="../audio/1/q/emoji/1zelenoglaz.jpg"
+                         onclick="changeImg(this); togglePopup(); popupImg(this);"
+                         alt="">
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/emoji/2boje_man.jpg">
-                    <img src="../pics/emodji.png" class="emoji-icon" alt="">
-                </a>
+                    <img src="../pics/emodji.png" class="emoji-icon"
+                         link="../audio/1/q/emoji/2boje_man.jpg"
+                         onclick="changeImg(this); togglePopup(); popupImg(this);"
+                         alt="">
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/emoji/3eksponat.jpg">
-                    <img src="../pics/emodji.png" class="emoji-icon" alt="">
-                </a>
+                    <img src="../pics/emodji.png" class="emoji-icon"
+                         onclick="changeImg(this); togglePopup(); popupImg(this);"
+                         link="../audio/1/q/emoji/3eksponat.jpg"
+                         alt="">
             </div>
             <div class="cell cell-color">
-                <a href="../audio/1/q/emoji/4nevesta.jpg">
-                    <img src="../pics/emodji.png" class="emoji-icon"  alt="">
-                </a>
+                    <img src="../pics/emodji.png" class="emoji-icon"
+                         link="../audio/1/q/emoji/3eksponat.jpg"
+                         onclick="changeImg(this); togglePopup(); popupImg(this);"
+                         alt="">
             </div>
             <div class="cell cell-color">
                 Мужские имена
@@ -101,6 +113,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/man_name/1aleshka_minus.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
@@ -113,6 +126,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/man_name/2roman.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
@@ -125,6 +139,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/man_name/3valera_valera_M.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
@@ -137,6 +152,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/man_name/4serega.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
@@ -152,6 +168,7 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/snow/1potolok.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
@@ -164,39 +181,39 @@
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/snow/2JingleBells.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
                           data-href="../audio/1/q/snow/2JingleBells.mp3"
                           data-type="time-remaining"
                     ></span>
-                </a>
             </div>
             <div class="cell cell-color">
                     <img src="../pics/sound-symbol.png"
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/snow/3zametaet.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
                           data-href="../audio/1/q/snow/3zametaet.mp3"
                           data-type="time-remaining"
                     ></span>
-                </a>
             </div>
             <div class="cell cell-color">
                     <img src="../pics/sound-symbol.png"
                          class="sound-icon jouele-control"
                          data-href="../audio/1/q/snow/4blueiney.mp3"
                          data-type="play-pause"
+                         onclick="changeImg(this)"
                          alt="1"
                     >
                     <span class="remaining jouele-control"
                           data-href="../audio/1/q/snow/4blueiney.mp3"
                           data-type="time-remaining"
                     ></span>
-                </a>
             </div>
         </div>
     </div>
