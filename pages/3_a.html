@@ -3,170 +3,237 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Отгадай мелодию</title>
-	<link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/jouele.min.js"></script>
+  <script src="../js/main.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../js/jouele.min.css">
 </head>
 <body>
-  <div>
-    <img src="../pics/snow.svg" alt="" class="snow-pic">
-  </div>
-  <!--таблица 5х5-->
-  <div class="wrapper">
-  <h1 class="headline"> — ТУР 3 — </h1>
-  <h2 class="headline">ОТГАДАЙ НАЗВАНИЕ И ИСПОЛНИТЕЛЯ</h2>
-
-	<table border="1" bordercolor="brown" cellpadding="10" bgcolor="antiquewhite" align="center" width="50%" height="50%">
-     <!--1 строка-->
-		<tr>
-         <!--1 столбец-->
-			<th>
-			Категория
-			</th>
-        <!--2 столбец-->
-			<th>
-            400
-			</th>
-        <!--3 столбец-->
-            <th>
-            800
-            </th>
-        <!--4 столбец-->
-            <th>
-            1200
-            </th>
-        <!--5 столбец-->
-            <th>
-            1600
-            </th>
-        
-		</tr>
-        <!--2 строка-->
-        <tr>
-         <!--1 столбец-->
-			<td  class="col">
-			Любимые песни твоего бати
-			</td>
-        <!--2 столбец-->
-			<td>
-			        <a href="../audio/3/a/batya/1lube_horse.mp3">
-                <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-              </a>
-			</td>
-        <!--3 столбец-->
-            <td>
-                <a href="../audio/3/a/batya/2Leps_vodka.mp3">
-                  <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                </a>
-            </td>
-        <!--4 столбец-->
-            <td>
-                <a href="../audio/3/a/batya/3Leningr_drink.mp3">
-                  <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                </a>
-            </td>
-        <!--5 столбец-->
-            <td>
-                <a href="../audio/3/a/batya/4lesh_goodbye.mp3">
-                  <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                </a>
-            </td>
-        
-		</tr>
-		 <!--3 строка-->
-        <tr>
-         <!--1 столбец-->
-			<td  class="col">
-			Google-караоке
-			</td>
-        <!--2 столбец-->
-			<td>
-			    <a href="../audio/3/a/google/1cygo_panda_3.mp3">
-            <img src="../pics/translate_red.svg" class="sound-icon"  alt="">
-          </a>
-			</td>
-        <!--3 столбец-->
-            <td>
-                <a href="../audio/3/a/google/2Max_berega.mp3">
-                  <img src="../pics/translate_red.svg"  class="sound-icon" alt="">
-                </a>
-            </td>
-        <!--4 столбец-->
-            <td>
-                <a href="../audio/3/a/google/3Lolita_na_tit.mp3">
-                  <img src="../pics/translate_red.svg" class="sound-icon"  alt="">
-                </a>
-            </td>
-        <!--5 столбец-->
-            <td>
-                <a href="../audio/3/a/google/4Zveri_dance.mp3">
-                  <img src="../pics/translate_red.svg" class="sound-icon"  alt="">
-                </a>
-            </td>
-        
-		</tr>
-		 <!--4 строка-->
-        <tr>
-         <!--1 столбец-->
-			<td class="col">
-			OST компьютерные игры
-			</td>
-        <!--2 столбец-->
-			<td>
-			   <a href="../audio/3/a/games/1gta.mp3">
-           <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-         </a>
-			</td>
-        <!--3 столбец-->
-            <td>
-               <a href="../audio/3/a/games/2nfs.mp3">
-                 <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-               </a>
-            </td>
-        <!--4 столбец-->
-            <td>
-               <a href="../audio/3/a/games/3skyrim.mp3">
-                 <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-               </a>
-            </td>
-        <!--5 столбец-->
-            <td>
-               <a href="../audio/3/a/games/4dota2.mp3">
-                 <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-               </a>
-            </td>
-        
-		</tr>
-		 <!--5 строка-->
-        <tr>
-         <!--1 столбец-->
-			<td class="col">
-			Твой плейлист
-			</td>
-        <!--2 столбец-->
-			<td>
-			     <a href="../audio/3/a/playlist/1grechka_love_me.mp3">
-             <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-           </a>
-			</td>
-        <!--3 столбец-->
-            <td>
-                 <a href="../audio/3/a/playlist/2kriptonit_multibrand.mp3">
-                   <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                 </a>
-            </td>
-        <!--4 столбец-->
-            <td>
-                 <a href="../audio/3/a/playlist/3Moll_nonstop.mp3">
-                   <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                 </a>
-            </td>
-        <!--5 столбец-->
-            <td>
-                 <a href="../audio/3/a/playlist/4tentacion_dontcry.mp3">
-                   <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                 </a>
-            </td>
-		</tr>
-	</table>
+<div class="popup invisible" onclick="togglePopup();">
+  <img id="img_popup" src="" alt="">
+</div>
+<img src="../pics/snow.svg" alt="" class="snow-pic">
+<div class="wrapper">
+  <h1 class="headline"> — тур 3 — </h1>
+  <h2 class="headline">отгадай название и исполнителя</h2>
+  <div class="grid-container">
+    <div class="cell header-cell">Категория</div>
+    <div class="cell header-cell">400</div>
+    <div class="cell header-cell">800</div>
+    <div class="cell header-cell">1200</div>
+    <div class="cell header-cell">1600</div>
+    <div class="cell cell-color">Любимые песни твоего бати</div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/batya/1lube_horse.mp3"
+           data-type="play-pause"
+           alt="1"
+           onclick="changeImg(this)"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/batya/1lube_horse.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/batya/2leps_vodka.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/batya/2leps_vodka.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/batya/3Lenin_drink.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/batya/3Lenin_drink.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div  class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/batya/4lesh_goodbye.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/batya/4lesh_goodbye.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      Google-караоке
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/translate_red.svg" class="sound-icon jouele-control"
+           data-href="../audio/3/a/google/1cygo_panda.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1">
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/google/1cygo_panda.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/translate_red.svg" class="sound-icon jouele-control"
+           data-href="../audio/3/a/google/2Max_berega.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="">
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/google/2Max_berega.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/translate_red.svg" class="sound-icon jouele-control"
+           data-href="../audio/3/a/google/3lolita_na_tit.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="">
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/google/3lolita_na_tit.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/translate_red.svg" class="sound-icon jouele-control"
+           data-href="../audio/3/a/google/4Zveri_dance.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="">
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/google/4Zveri_dance.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      OST компьютерные игры
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/games/1gta.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/games/1gta.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/games/2nfs.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/games/2nfs.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/games/3skyrim.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/games/3skyrim.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/games/4dota2.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/games/4dota2.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      Твой плейлист
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/playlist/1grechka_loveme.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/playlist/1grechka_loveme.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/playlist/2kriptonit_multibrand.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/playlist/2kriptonit_multibrand.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/playlist/3Moll_nonstop.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/playlist/3Moll_nonstop.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
+    <div class="cell cell-color">
+      <img src="../pics/sound-symbol_red.png"
+           class="sound-icon jouele-control"
+           data-href="../audio/3/a/playlist/4tentacion_dontcry.mp3"
+           data-type="play-pause"
+           onclick="changeImg(this)"
+           alt="1"
+      >
+      <span class="remaining jouele-control"
+            data-href="../audio/3/a/playlist/4tentacion_dontcry.mp3"
+            data-type="time-remaining"
+      ></span>
+    </div>
   </div>
   <img src="../pics/snow.svg" alt="" class="snow-pic snow-right">
   <nav class="navigation-menu">

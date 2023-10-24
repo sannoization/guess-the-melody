@@ -3,169 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <title>Отгадай мелодию</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jouele.min.js"></script>
+    <script src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/jouele.min.css">
 </head>
-
 <body>
-    <img src="../pics/snow.svg" alt=""class="snow-pic">
-    <!--таблица 5х5-->
-    <div class="wrapper">
-        <h1 class="headline"> — ТУР 2 — </h1>
-        <h2 class="headline">ОТГАДАЙ ИСПОЛНИТЕЛЯ</h2>
-        <table border="1" bordercolor="brown" cellpadding="10" bgcolor="antiquewhite" align="center" width="50%" height="50%">
-            <!--1 строка-->
-            <tr>
-                <!--1 столбец-->
-                <th>
-                    Категория
-                </th>
-                <!--2 столбец-->
-                <th>
-                    200
-                </th>
-                <!--3 столбец-->
-                <th>
-                    400
-                </th>
-                <!--4 столбец-->
-                <th>
-                    600
-                </th>
-                <!--5 столбец-->
-                <th>
-                    800
-                </th>
-
-            </tr>
-            <!--2 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Жданохиты
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/2/a/zhdan/1loboda.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/2/a/zhdan/2agutin.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/2/a/zhdan/3borodin.wav">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/2/a/zhdan/4kultorgi.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-
-            </tr>
-            <!--3 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Обложка
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/2/a/cover/1xleb.jpg">
-                        <img src="../pics/gallery_red.svg" class="sound-icon" alt="">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/2/a/cover/2imagine.jpg">
-                        <img src="../pics/gallery_red.svg"  class="sound-icon" alt="">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/2/a/cover/3nirvana.jpg">
-                        <img src="../pics/gallery_red.svg" class="sound-icon"  alt="">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/2/a/cover/4bi-2.jpg">
-                        <img src="../pics/gallery_red.svg" class="sound-icon"  alt="">
-                    </a>
-                </td>
-
-            </tr>
-            <!--4 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Дискотека 90-ых
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/2/a/90/1handsup.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/2/a/90/2Combo.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/2/a/90/3Roxette.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/2/a/90/4Haddaway.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-
-            </tr>
-            <!--5 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Sad Girls
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/2/a/sadGirls/1We.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/2/a/sadGirls/2xleb.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/2/a/sadGirls/3tentacion.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/2/a/sadGirls/4korzh1.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-            </tr>
-        </table>
+<div class="popup invisible" onclick="togglePopup();">
+    <img id="img_popup" src="" alt="">
+</div>
+<img src="../pics/snow.svg" alt="" class="snow-pic">
+<div  class="wrapper">
+    <h1 class="headline"> — ТУР 2 — </h1>
+    <h2 class="headline">ОТГАДАЙ ИСПОЛНИТЕЛЯ</h2>
+    <div class="grid-container">
+        <div class="cell header-cell">Категория</div>
+        <div class="cell header-cell">200</div>
+        <div class="cell header-cell">400</div>
+        <div class="cell header-cell">600</div>
+        <div class="cell header-cell">800</div>
+        <div class="cell cell-color">Жданохиты</div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/zhdan/1loboda.mp3"
+                 data-type="play-pause"
+                 alt=""
+                 onclick="changeImg(this)"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/zhdan/1loboda.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/zhdan/2agutin.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/zhdan/2agutin.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/zhdan/3borodin.wav"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/zhdan/3borodin.wav"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div  class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/zhdan/4kultorgi.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/zhdan/4kultorgi.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            Обложка
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/gallery_red.svg" class="emoji-icon"
+                 link="../audio/2/a/cover/1xleb.jpg"
+                 onclick="changeImg(this); togglePopup(); popupImg(this);"
+                 alt="2">
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/gallery_red.svg" class="emoji-icon"
+                 link="../audio/2/a/cover/2imagine.jpg"
+                 onclick="changeImg(this); togglePopup(); popupImg(this);"
+                 alt="2">
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/gallery_red.svg" class="emoji-icon"
+                 onclick="changeImg(this); togglePopup(); popupImg(this);"
+                 link="../audio/2/a/cover/3nirvana.jpg"
+                 alt="2">
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/gallery_red.svg" class="emoji-icon"
+                 link="../audio/2/a/cover/4bi-2.jpg"
+                 onclick="changeImg(this); togglePopup(); popupImg(this);"
+                 alt="2">
+        </div>
+        <div class="cell cell-color">
+            Дискотека 90-ых
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/90/1handsup.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/90/1handsup.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/90/2Combo.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/90/2Combo.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/90/3Roxette.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/90/3Roxette.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/90/4Haddaway.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/90/4Haddaway.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            Sad Girls
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/sadGirls/1We.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/sadGirls/1We.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/sadGirls/2xleb.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/sadGirls/2xleb.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/sadGirls/3tentacion.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/sadGirls/3tentacion.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/2/a/sadGirls/4korzh1.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/2/a/sadGirls/4korzh1.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
     </div>
+</div>
     <img src="../pics/snow.svg" alt="" class="snow-pic snow-right">
     <nav class="navigation-menu">
         <a class="navbutton" href="../index.html" accesskey="0">Главная</a>
@@ -178,6 +228,5 @@
         <a href="../pages/final_q.html" accesskey="5"></a>
         <a href="../pages/final_a.html" accesskey="6"></a>
     </nav>
-
 </body>
 </html>

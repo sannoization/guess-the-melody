@@ -3,170 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <title>Отгадай мелодию</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jouele.min.js"></script>
+    <script src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/jouele.min.css">
+    <link rel="stylesheet" href="../js/jouele.skin.css">
 </head>
-
 <body>
-    <img src="../pics/snow.svg" alt="" class="snow-pic">
-    <!--таблица 5х5-->
-    <div class="wrapper">
-        <h1 class="headline"> — ТУР 1 — </h1>
-        <h2 class="headline">ОТГАДАЙ НАЗВАНИЕ</h2>
-
-        <table border="1" bordercolor="brown" cellpadding="10" bgcolor="antiquewhite" align="center" width="50%" height="50%">
-            <!--1 строка-->
-            <tr>
-                <!--1 столбец-->
-                <th>
-                    Категория
-                </th>
-                <!--2 столбец-->
-                <th>
-                    100
-                </th>
-                <!--3 столбец-->
-                <th>
-                    200
-                </th>
-                <!--4 столбец-->
-                <th>
-                    300
-                </th>
-                <!--5 столбец-->
-                <th>
-                    400
-                </th>
-
-            </tr>
-            <!--2 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    The Beatles
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/a/the_beatles/1yesterday.mp3" >
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/a/the_beatles/2yellowsub.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/a/the_beatles/3letitbe.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/a/the_beatles/4heyjude.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-
-            </tr>
-            <!--3 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Emoji
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/a/emoji/1zelenoglaz.mp3">
-                        <img src="../pics/emodji.png" class="emoji-icon" alt="">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/a/emoji/2ohman.mp3">
-                        <img src="../pics/emodji.png"  class="emoji-icon" alt="">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/a/emoji/3exponat.mp3">
-                        <img src="../pics/emodji.png" class="emoji-icon" alt="">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/a/emoji/4nevesta.mp3">
-                        <img src="../pics/emodji.png" class="emoji-icon" alt="">
-                    </a>
-                </td>
-
-            </tr>
-            <!--4 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    Мужские имена
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/a/man_name/1aleshka.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/a/man_name/2roman.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/a/man_name/3valera+.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/a/man_name/4serega1.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-
-            </tr>
-            <!--5 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td class="col">
-                    А снег идет...
-                </td>
-                <!--2 столбец-->
-                <td>
-                    <a href="../audio/1/a/snow/1potolok2.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--3 столбец-->
-                <td>
-                    <a href="../audio/1/a/snow/2JingleBells.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--4 столбец-->
-                <td>
-                    <a href="../audio/1/a/snow/3zametaet2.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-                <!--5 столбец-->
-                <td>
-                    <a href="../audio/1/a/snow/4blueiney.mp3">
-                        <img src="../pics/sound-symbol_red.png" alt="1" class="sound-icon">
-                    </a>
-                </td>
-            </tr>
-        </table>
+<div class="popup invisible" onclick="togglePopup();">
+    <img id="img_popup" src="" alt="">
+</div>
+<img src="../pics/snow.svg" alt="" class="snow-pic">
+<div class="wrapper">
+    <h1 class="headline"> — ТУР 1 — </h1>
+    <h2 class="headline">ОТГАДАЙ НАЗВАНИЕ</h2>
+    <div class="grid-container">
+        <div class="cell header-cell">Категория</div>
+        <div class="cell header-cell">100</div>
+        <div class="cell header-cell">200</div>
+        <div class="cell header-cell">300</div>
+        <div class="cell header-cell">400</div>
+        <div class="cell cell-color">The Beatles</div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/beatles/1yesterday.mp3"
+                 data-type="play-pause"
+                 alt="1"
+                 onclick="changeImg(this)"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/beatles/1yesterday.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/beatles/2yellowsub.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/beatles/2yellowsub.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/beatles/3letitbe.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/beatles/3letitbe.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div  class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/beatles/4heyjude.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/beatles/4heyjude.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            Emoji
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/emodji.png" class="emoji-icon jouele-control"
+                 data-href="../audio/1/a/emoji/1zelenoglaz.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1">
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/emoji/1zelenoglaz.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/emodji.png" class="emoji-icon jouele-control"
+                 data-href="../audio/1/a/emoji/2boje_man.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="">
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/emoji/2boje_man.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/emodji.png" class="emoji-icon jouele-control"
+                 data-href="../audio/1/a/emoji/3exponat.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="">
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/emoji/3exponat.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/emodji.png" class="emoji-icon jouele-control"
+                 data-href="../audio/1/a/emoji/4nevesta.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="">
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/emoji/4nevesta.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            Мужские имена
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/man_name/1aleshka.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/man_name/1aleshka.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/man_name/2roman.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/man_name/2roman.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/man_name/3valera+.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/man_name/3valera+.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/man_name/4serega1.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/man_name/4serega1.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            А снег идет...
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/snow/1potolok2.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/snow/1potolok2.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/snow/2JingleBells.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/snow/2JingleBells.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/snow/3zametaet2.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/snow/3zametaet2.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="cell cell-color">
+            <img src="../pics/sound-symbol_red.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/1/a/snow/4blueiney.mp3"
+                 data-type="play-pause"
+                 onclick="changeImg(this)"
+                 alt="1"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/1/a/snow/4blueiney.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
     </div>
+</div>
     <img src="../pics/snow.svg" alt="" class="snow-pic snow-right">
     <nav class="navigation-menu">
         <a class="navbutton" href="../index.html" accesskey="0">Главная</a>
