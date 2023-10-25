@@ -3,91 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Отгадай мелодию</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jouele.min.js"></script>
+    <script src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/jouele.min.css">
+    <link rel="stylesheet" href="../js/jouele.skin.css">
 </head>
 
 <body>
     <img src="../pics/snow.svg" alt="" class="snow-pic">
-    <!--таблица 5х5-->
     <div class="wrapper">
         <h1 class="headline"> — Заключительный тур — </h1>
         <h2 class="headline">ОТГАДАЙ НАЗВАНИЕ И ИСПОЛНИТЕЛЯ</h2>
-        <audio src="../audio/4/final.mp3" controls></audio>
-        <table border="1" bordercolor="brown" cellpadding="10" bgcolor="antiquewhite" align="center" width="50%" height="50%">
-            <!--1 строка-->
-            <tr>
-                <td>
-                    Элджей — Минимал
-                </td>
-            </tr>
-            <!--2 строка-->
-            <tr>
-                <td>
-                    6LACK — PRBLMS
-                </td>
-            </tr>
-            <!--3 строка-->
-            <tr>
-                <!--1 столбец-->
-                <td>
-                    Хлеб — Ну ты понял
-                </td>
-
-            </tr>
-            <!--4 строка-->
-            <tr>
-                <td>
-                   Blur — Song Two
-                </td>
-            </tr>
-            <!--5 строка-->
-            <tr>
-                <td>
-                    Ранетки — Ангелы
-                </td>
-            </tr>
-            <!--		6 строка-->
-            <tr>
-                <td>
-                    Red Hot Chili Peppers — Can't Stop
-                </td>
-            </tr>
-            <!--		7 строка-->
-            <tr>
-                <td>
-                    Время и стекло — Топ
-                </td>
-            </tr>
-            <!--		8 строка-->
-            <tr>
-                <td>
-                    The XX — Angels
-                </td>
-            </tr>
-            <!--		9 строка-->
-            <tr>
-                <td>
-                    Feduk — Tour de France
-                </td>
-            </tr>
-            <!--		10 строка-->
-            <tr>
-                <td>
-                    Rihanna — Diamonds
-                </td>
-            </tr>
-        </table>
+        <div class="final-audio-cell cell-color">
+            <img src="../pics/sound-symbol.png"
+                 class="sound-icon jouele-control"
+                 data-href="../audio/4/final.mp3"
+                 data-type="play-pause"
+                 alt="1"
+                 onclick="changeImg(this)"
+            >
+            <span class="remaining jouele-control"
+                  data-href="../audio/4/final.mp3"
+                  data-type="time-remaining"
+            ></span>
+        </div>
+        <div class="flex-container">
+            <div class="final-text-cell cell-color">
+                <span>Элджей — Минимал</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>6LACK — PRBLMS</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>Хлеб — Ну ты понял</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>Blur — Song Two</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>Ранетки — Ангелы</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>Red Hot Chili Peppers — Can't Stop</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>Время и стекло — Топ</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>The XX — Angels</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>Feduk — Tour de France</span>
+            </div>
+            <div class="final-text-cell cell-color">
+                <span>Rihanna — Diamonds</span>
+            </div>
+        </div>
     </div>
     <img src="../pics/snow.svg" alt="" class="snow-pic snow-right" >
-    <nav class="navigation-menu">
+    <nav class="navigation-menu mini">
         <a class="navbutton" href="../index.html" accesskey="0">Главная</a>
+        <a class="navbutton" href="../pages/final_q.html" accesskey="5">Вопросы</a>
         <a href="../pages/1_q.html" accesskey="1"></a>
         <a href="../pages/1_a.html" accesskey="q"></a>
         <a href="../pages/2_q.html" accesskey="2"></a>
         <a href="../pages/2_a.html" accesskey="w"></a>
         <a href="../pages/3_q.html" accesskey="3"></a>
         <a href="../pages/3_a.html" accesskey="4"></a>
-        <a class="navbutton" href="../pages/final_q.html" accesskey="5">вопросы</a>
         <a href="../pages/final_a.html" accesskey="6"></a>
     </nav>
 

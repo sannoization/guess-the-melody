@@ -1,4 +1,8 @@
-# guess-the-melody-snn.github.io
+# Guess The Melody | Угадай Мелодию
+guess-the-melody-snn.github.io
+## Руководство пользователя
+## Руководство разработчика
+
 Social Game for mediacentre "Politele!" of NNSTU
 use <a href="https://sannoization.github.io/guess-the-melody-snn.github.io">this link</a> to check usability
 <br>
@@ -13,6 +17,6 @@ use access-keys in your browser:
   <li>0 — to background</li>
   <li>q — to answers of first round</li>
   <li>w — to answers of second round</li>
-</ol>
+</ul>
 <br>
 while playing audio on the same tab, use shortcut alt ← to previous page 

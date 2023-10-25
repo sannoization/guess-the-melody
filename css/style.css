@@ -40,7 +40,6 @@ body {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
-    margin-left: 20px;
 }
 
 table {
@@ -97,8 +96,14 @@ td {
 
 .navigation-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.mini {
+    flex-flow: column nowrap;
+    gap: 10px;
+    align-items: center;
 }
 
 .grid-container {
@@ -109,6 +114,12 @@ td {
     margin-bottom: 20px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
 .cell {
     font-family: var(--main-font-family);
     border: solid black 1px;
@@ -116,23 +127,28 @@ td {
     padding-bottom: 20px;
     text-align: center;
 }
+.final-text-cell {
+    font-family: var(--main-font-family);
+    width: 50%;
+    padding-top: 10px;
+    height: 50px;
+    margin: 0 auto;
+    border: solid black 1px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+}
 
-.final-cell {
+.final-audio-cell {
     font-family: var(--main-font-family);
     width: 100px;
     height: 100px;
-    display: flex;
-    margin-left: 25%;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     border: solid black 1px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    vertical-align: center;
-
+}
+.final-audio-cell > img {
+    margin-top: 20px;
 }
 
 .cell-color {
