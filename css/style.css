@@ -189,6 +189,21 @@ audio {
     vertical-align: middle;
 }
 
-.invisible{
+.invisible {
     display: none;
+}
+.activator {
+    display: inline-block;
+}
+
+.activator:checked ~ .content {
+    display: block;
+}
+
+.content {
+    display: none;
+}
+input {
+    width: 100%;
+    height: 20px;
 }
