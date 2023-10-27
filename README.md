@@ -1,22 +1,38 @@
 # Guess The Melody | Угадай Мелодию
-guess-the-melody-snn.github.io
-## Руководство пользователя
+
+`guess-the-melody-snn.github.io`
 ## Руководство разработчика
 
-Social Game for mediacentre "Politele!" of NNSTU
-use <a href="https://sannoization.github.io/guess-the-melody-snn.github.io">this link</a> to check usability
-<br>
-use access-keys in your browser:
-<ul>
-  <li>1 — to questions of first round</li>
-  <li>2 — to questions of second round</li>
-  <li>3 — to questions of third round</li>
-  <li>4 — to answers of third round</li>
-  <li>5 — to questions of final round</li>
-  <li>6 — to answers of final round</li>
-  <li>0 — to background</li>
-  <li>q — to answers of first round</li>
-  <li>w — to answers of second round</li>
-</ul>
-<br>
-while playing audio on the same tab, use shortcut alt ← to previous page 
+## Руководство пользователя
+
+1. Скачать себе архив: либо через `code->download zip`, либо через `git clone` в терминале
+2. Чтобы играть, нужно сделать:
+- поменять аудио
+- поменять названия категорий треков по турам и, если нужно, веса
+- если нужно — поменять картинки: `backgr.jpg`, `snow.svg`. `backgr.jpg` должна быть разрешением 1920x1080. Вместо `snow.svg` можно использовать любую другую svg картинку, но наименование и размеры должны оставаться такими же.
+
+Аудио находятся по пути:
+`audio/цифра/q или a/x_row/x_track`
+
+- `цифра` обозначает тур
+- `q` обозначает тур вопросов
+- `a` обозначает тур ответов
+- `_row` — строку в таблице
+- `_track` — трек в ячейке
+
+Для финального тура достаточно просто заменить трек, он будет играть как в вопросах, так и в ответах
+
+Также для навигации можно использовать шорткаты:
+- `0` — главная
+- `1` — переход на первый тур с вопросами
+- `2` — переход на второй тур с вопросами
+- `3` — переход на третий тур с вопросами
+- `q` — переход на ответы первого тура
+- `w` — переход на ответы второго тура
+- `4` — переход на ответы третьего тура
+- `5` — переход на вопросы финального тура
+- `6` — переход на ответы финального тура
+
+[Попробовать можно по здесь](https://sannoization.github.io/guess-the-melody-snn.github.io)
+
+Проект изначально был разработан для Медиацентра НГТУ Полителе
