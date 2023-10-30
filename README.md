@@ -1,4 +1,6 @@
 # Guess The Melody | Угадай Мелодию
+[![pipeline](https://github.com/sannoization/guess-the-melody/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/sannoization/guess-the-melody/actions/workflows/pages/pages-build-deployment)
+
 
 `guess-the-melody-snn.github.io`
 ## Руководство пользователя
